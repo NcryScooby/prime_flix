@@ -16,7 +16,7 @@ const Filme = () => {
       await api
         .get(`movie/${id}`, {
           params: {
-            api_key: "17e22726173ad18e73404feb4ca6c964",
+            api_key: process.env.REACT_APP_TMDB_API_KEY,
             language: "pt-BR",
           },
         })
